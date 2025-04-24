@@ -119,4 +119,9 @@ cria e muda para branch
 ```bash
 git checkout -b <nome da branch>
 ```
+realiza o commit
 
+push na branch
+```bash
+git push -u origin <nome da branch>
+```
