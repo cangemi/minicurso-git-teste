@@ -25,7 +25,7 @@ ou
 ```bash
 git add .
 ```
-Verifica a branch atual
+lista as branches
 ```bash
 git branch
 ```
@@ -83,7 +83,7 @@ Ver o histórico
 ```bash
 git reflog
 ```
-Voltar e apagar tudo que veio depois
+Voltar para o commit
 ```bash
 git reset --hard "HEAD@{<numero do commit>}"
 ```
@@ -93,7 +93,30 @@ ou
 ```bash
 git reset --hard <hash>
 ```
-só voltar o commit mas manter os arquivos intactos não recupera arquivos
+
+-----//------
+
+criar pag3 e pag4 com branchs diferentes
+
+Clonar projeto
 ```bash
-git reset --soft "HEAD@{<numero do commit>}"
+git clone <endereco do projeto>
 ```
+lista as branches
+```bash
+git branch
+```
+
+cria uma nova branch
+```bash
+git branch <nome da branch>
+```
+muda para branch
+```bash
+git checkout <nome da branch>
+```
+cria e muda para branch
+```bash
+git checkout -b <nome da branch>
+```
+
