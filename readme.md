@@ -79,10 +79,11 @@ git push
 
 Deletar style.css e recuperar
 
+Ver o histórico
 ```bash
 git reflog
 ```
-
+Voltar e apagar tudo que veio depois
 ```bash
 git reset --hard "HEAD@{<numero do commit>}"
 ```
@@ -92,29 +93,7 @@ ou
 ```bash
 git reset --hard <hash>
 ```
-
+só voltar o commit mas manter os arquivos intactos não recupera arquivos
 ```bash
 git reset --soft "HEAD@{<numero do commit>}"
-```
-mudança
-
-
-Deletar style.css e recuperar
-
-```bash
-git reflog
-```
-
-```bash
-git git reset --hard "HEAD@{<numero do commit>}"
-```
-
-ou
-
-```bash
-git git reset --hard <hash>
-```
-
-```bash
-git git reset --soft "HEAD@{<numero do commit>}"
 ```
