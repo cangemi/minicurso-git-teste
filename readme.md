@@ -153,3 +153,16 @@ Faz o push da branch principal atualizada
 ```bash
 git push origin main
 ```
+Para deletar a branch
+```bash
+git branch -d <nome da branch>
+```
+
+Para deletar a branch se ainda não tiver realizado merge
+```bash
+git branch -D <nome da branch>
+```
+Para deletar a branch remota
+```bash
+git push origin --delete <nome da branch>
+```
