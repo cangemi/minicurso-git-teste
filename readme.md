@@ -125,3 +125,31 @@ push na branch
 ```bash
 git push -u origin <nome da branch>
 ```
+
+fazer merge
+
+remoto precisa criar uma cópia
+
+lista as branches locais e remotas
+```bash
+git branch -a
+```
+
+Caso não tenha as branches locais:
+```bash
+git branch <nome da branch> origin/<nome da branch>
+```
+
+cria e muda para a branch, neste caso para fazer o merge precisa voltar para branch principal
+```bash
+git checkout -b feature/pag3 origin/<nome da branch>
+```
+faz o merge para cada branch
+```bash
+git merge <nome da branch>
+```
+
+Faz o push da branch principal atualizada
+```bash
+git push origin main
+```
