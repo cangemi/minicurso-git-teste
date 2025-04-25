@@ -192,3 +192,9 @@ criar arquivo
 
 .env
 
+adicionar ao gitignore
+
+Definir um environment no github e uma secret
+
+criar um git actions
+
