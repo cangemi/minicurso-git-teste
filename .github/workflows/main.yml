@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print secret
-        run: echo "A senha é ${{ env.vars.SECRET }}"
+        run: echo "A senha é ${{ vars.SECRET }}"
