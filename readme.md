@@ -166,3 +166,29 @@ Para deletar a branch remota
 ```bash
 git push origin --delete <nome da branch>
 ```
+
+
+-----//------
+
+criar gitignore
+
+.gitignore
+    css e deletar a pasta
+    fazer um push
+    voltar a pasta e adicionar somente
+    style.css
+
+    para remover do cache do projeto projeto
+    ```bash
+    git rm --cashed <endereço do arquivo>
+    ```
+
+    evitar envio de todo arquivo de uma extensão especifica
+    *.html
+
+mostrar gitignore.io
+
+criar arquivo
+
+.env
+
