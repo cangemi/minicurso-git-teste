@@ -44,6 +44,8 @@ git commit -m "descricao do commit"
 Verifica usuario logado no github
 ```bash
 git config --global user.email
+
+git config --global user.name
 ```
 
 
@@ -51,9 +53,20 @@ define o email do usuário
 ```bash
 git config --global user.email "you@example.com"
 ```
-define o email do usuário
+
+define o nome do usuário
+```bash
+git config --global user.name "nome"
+```
+
+apaga o email do usuário
 ```bash
 git config --global --unset user.email "you@example.com"
+```
+
+apaga o nome do usuário
+```bash
+git config --global --unset user.name "nome"
 ```
 
 
