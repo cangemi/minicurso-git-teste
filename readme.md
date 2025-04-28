@@ -18,10 +18,7 @@ Inicializa um repositório Git na pasta atual
 git init
 ```
 Adiciona todos os arquivos
-```bash
-git add -A
-```
-ou
+
 ```bash
 git add .
 ```
@@ -43,6 +40,22 @@ Faz um commit com uma mensagem descritiva sobre as alterações realizadas
 ```bash
 git commit -m "descricao do commit"
 ```
+
+Verifica usuario logado no github
+```bash
+git config --global user.email
+```
+
+
+define o email do usuário
+```bash
+git config --global user.email "you@example.com"
+```
+define o email do usuário
+```bash
+git config --global --unset user.email "you@example.com"
+```
+
 
 Envia os arquivos para o repositório e configura o push para origem e branch main
 ```bash
