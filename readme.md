@@ -22,20 +22,6 @@ Adiciona todos os arquivos
 ```bash
 git add .
 ```
-lista as branches
-```bash
-git branch
-```
-
-Modifica o nome da branch
-```bash
-git branch -M <novo nome>
-```
-Adicionar repositório remoto
-```bash
-git remote add origin <endereco do repositorio>
-```
-
 Faz um commit com uma mensagem descritiva sobre as alterações realizadas
 ```bash
 git commit -m "descricao do commit"
@@ -67,6 +53,20 @@ git config --global --unset user.email "you@example.com"
 apaga o nome do usuário
 ```bash
 git config --global --unset user.name "nome"
+```
+
+lista as branches
+```bash
+git branch
+```
+
+Modifica o nome da branch
+```bash
+git branch -M <novo nome>
+```
+Adicionar repositório remoto
+```bash
+git remote add origin <endereco do repositorio>
 ```
 
 
