@@ -7,5 +7,6 @@ jobs:
     steps:
       - name: Print secret
         run: echo "A senha é ${{ secrets.SECRET }}"
+      - uses: actions/checkout@v4
       - name: listar diretorio
         run: ls -la
