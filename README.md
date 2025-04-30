@@ -224,4 +224,6 @@ Definir um environment no github e uma secret
 
 criar um git actions
 
+dir /a /q
+
 # Titulo adicionado pelo GitHub Actions
