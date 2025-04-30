@@ -1,9 +1,13 @@
 name: Test secrets
 on: [push]
 jobs:
-  test:
+        
+  clone-manual:
     runs-on: ubuntu-latest
-    environment: env
     steps:
-      - name: Print secret
-        run: echo "A senha é ${{ secrets.SECRET }}"
+      - name: Configurar Git
+        run: git --version  # só para mostrar que o git já existe
+  
+      - name: Clonar repositório manualmente
+        run: |
+          git clone https://github.com/${{ github.repository }} .
