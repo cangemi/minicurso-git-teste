@@ -1,6 +1,15 @@
 name: Test secrets
 on: [push]
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: env
+    steps:
+      - name: Print secret
+        run: echo "A senha é ${{ secrets.SECRET }}"
+      - uses: actions/checkout@v4
+      - name: listar diretorio
+        run: ls -la
         
   clone-manual:
     runs-on: ubuntu-latest
