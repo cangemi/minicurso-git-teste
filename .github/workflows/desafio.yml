@@ -1,0 +1,23 @@
+name: Atualizar README
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fazer checkout do código
+        uses: actions/checkout@v4
+
+      - name: Adicionar conteúdo no README.md
+        run: |
+          echo "# Titulo adicionado pelo GitHub Actions" > readme.md
+
+
+      - name: Fazer commit e push
+        run: |
+          git add README.md
+          git commit -m "Atualiza README.md via Actions" || echo "Nenhuma alteração para commitar"
+          git push
