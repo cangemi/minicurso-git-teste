@@ -13,7 +13,7 @@ jobs:
 
       - name: Adicionar conteúdo no README.md
         run: |
-          echo "# Titulo adicionado pelo GitHub Actions" > readme.md
+          echo "# Titulo adicionado pelo GitHub Actions" > README.md
 
 
       - name: Fazer commit e push
