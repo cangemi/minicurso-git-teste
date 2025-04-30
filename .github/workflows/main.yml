@@ -33,6 +33,9 @@ jobs:
 
       - name: Checar versão do Node
         run: node --version
+        
+      - name: Verificar arquivos no diretório
+        run: ls -la
 
       - name: Rodar um arquivo JavaScript
         run: node sum.test.js
