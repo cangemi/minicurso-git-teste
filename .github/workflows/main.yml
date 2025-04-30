@@ -18,5 +18,21 @@ jobs:
         run: git --version  # só para mostrar que o git já existe
   
       - name: Clonar repositório manualmente
-        run: |
-          git clone https://github.com/${{ github.repository }} .
+        run: git clone https://github.com/${{ github.repository }} .
+      - name: listar diretorio
+        run: ls -la
+        
+  node-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Usar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'   # versão que você quiser: 16, 18, 20, etc
+
+      - name: Checar versão do Node
+        run: node --version
+
+      - name: Rodar um arquivo JavaScript
+        run: node sum.test.js
