@@ -14,7 +14,11 @@ jobs:
       - name: Adicionar conteúdo no README.md
         run: |
           echo "# Titulo adicionado pelo GitHub Actions" > README.md
-
+          
+      - name: Configurar usuário Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Fazer commit e push
         run: |
