@@ -8,4 +8,4 @@ jobs:
       - name: Print secret
         run: echo "A senha é ${{ secrets.SECRET }}"
       - name: listar diretorio
-        run: ls - la
+        run: ls -la
