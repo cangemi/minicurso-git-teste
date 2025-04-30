@@ -13,7 +13,7 @@ jobs:
 
       - name: Adicionar conteúdo no README.md
         run: |
-          echo "# Titulo adicionado pelo GitHub Actions" > README.md
+          echo "# Titulo adicionado pelo GitHub Actions" >> README.md
           
       - name: Configurar usuário Git
         run: |
@@ -24,4 +24,4 @@ jobs:
         run: |
           git add README.md
           git commit -m "Atualiza README.md via Actions" || echo "Nenhuma alteração para commitar"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
